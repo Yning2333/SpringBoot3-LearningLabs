@@ -9,6 +9,9 @@ SpringBoot3-LearningLabs 是一个开源项目，旨在为新手程序员提供�
 ## 简介
 
 SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x 学习项目。通过一系列实际的示例，本项目旨在帮助开发者快速掌握 Spring Boot 的核心概念和应用。
+## 前提
+
+SpringBot3最低支持JDK17
 
 ## 功能
 
@@ -43,7 +46,7 @@ SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x �
 
 ## 联系
 如果你有任何问题或建议，请通过以下方式联系我们：
-- **邮件**： [yning2333@gmail.com]
+- **邮件**： yning2333@gmail.com
 - **GitHub**：[@Yning2333](https://github.com/Yning2333)
 
 感谢你的关注和支持，让我们一起构建一个更好的 Spring Boot 学习社区！
