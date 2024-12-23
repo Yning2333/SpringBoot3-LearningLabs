@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: druid
+server:
+  port: 8080
+  servlet:
+    context-path: /
+logging:
+  level:
+    com.alibaba.druid.pool.DruidDataSource: INFO

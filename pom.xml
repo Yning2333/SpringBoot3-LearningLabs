@@ -11,11 +11,13 @@
 
     <modules>
         <module>spring-boot3-hello</module>
+        <module>spring-boot3-druid</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
+        <spring-boot.version>3.4.1</spring-boot.version>
     </properties>
 
     <dependencyManagement>
@@ -24,9 +26,14 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>3.4.1</version> <!--  截止到2024-12-23,最新且稳定的版本是3.4.1 -->
+                <version>${spring-boot.version}</version> <!--  截止到2024-12-23,最新且稳定的版本是3.4.1 -->
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

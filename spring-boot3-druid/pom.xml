@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -10,15 +9,36 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>spring-boot3-hello</artifactId>
+    <artifactId>spring-boot3-druid</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- Spring Boot Web Starter -->
+
+        <!-- Spring Boot Starter Web: 用于构建Web应用 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- Druid 数据源集成 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-3-starter</artifactId>
+            <version>1.2.24</version> <!-- 确保使用与 Spring Boot3 兼容的版本 -->
+        </dependency>
+
+        <!-- MySQL 驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -48,5 +68,4 @@
             </resource>
         </resources>
     </build>
-
 </project>
