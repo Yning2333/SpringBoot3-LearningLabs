@@ -2,9 +2,9 @@
 SpringBoot3-LearningLabs 是一个开源项目，旨在为新手程序员提供一个全面的 Spring Boot 3.x 学习平台。该项目通过一系列精心设计的演示（demo）来展示 Spring Boot 3 的核心功能和最佳实践。无论是微服务架构、数据访问、安全性、异步消息传递还是其他高级特性，SpringBoot3-LearningLabs 都能帮助你快速上手并深入理解。我们鼓励社区贡献，共同构建一个丰富、动态的学习资源库。
 # SpringBoot3-LearningLabs
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/SpringBoot3-LearningLabs?style=social)](https://github.com/yourusername/SpringBoot3-LearningLabs)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/SpringBoot3-LearningLabs?style=social)](https://github.com/yourusername/SpringBoot3-LearningLabs)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/SpringBoot3-LearningLabs)](https://github.com/yourusername/SpringBoot3-LearningLabs/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Yning2333/SpringBoot3-LearningLabs?style=social)](https://github.com/Yning2333/SpringBoot3-LearningLabs)
+[![GitHub forks](https://img.shields.io/github/forks/Yning2333/SpringBoot3-LearningLabs?style=social)](https://github.com/Yning2333/SpringBoot3-LearningLabs)
+[![GitHub issues](https://img.shields.io/github/issues/Yning2333/SpringBoot3-LearningLabs)](https://github.com/Yning2333/SpringBoot3-LearningLabs/issues)
 
 ## 简介
 
@@ -23,7 +23,7 @@ SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x �
 
 1. **克隆项目**：
    ```bash
-   git clone https://github.com/yourusername/SpringBoot3-LearningLabs.git
+   git clone https://github.com/Yning2333/SpringBoot3-LearningLabs.git
 2. **构建项目**：
    ```bash
     cd SpringBoot3-LearningLabs
