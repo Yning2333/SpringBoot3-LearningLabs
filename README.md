@@ -15,12 +15,7 @@ SpringBot3最低支持JDK17
 
 ## 功能
 
-- **基础入门**：涵盖 Spring Boot 的基本设置和运行。
-- **数据访问**：展示如何使用 Spring Data 访问数据库。
-- **RESTful API**：构建 RESTful 服务的示例。
-- **安全性**：Spring Security 的集成和使用。
-- **异步消息传递**：使用 Spring 集成消息传递的示例。
-- **微服务架构**：构建微服务的示例和指南。
+- **[spring-boot3-hello](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-hello)**：涵盖 Spring Boot 的基本设置和运行。
 
 ## 快速开始
 
