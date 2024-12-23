@@ -16,7 +16,7 @@ SpringBot3最低支持JDK17
 ## 功能
 
 - **[spring-boot3-hello](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-hello)**：涵盖 Spring Boot 的基本设置和运行。
-- - **[spring-boot3-druid](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-druid)**：集成druid
+- **[spring-boot3-druid](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-druid)**：集成druid
 
 ## 快速开始
 
