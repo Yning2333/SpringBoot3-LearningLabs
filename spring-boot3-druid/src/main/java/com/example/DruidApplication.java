@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
-public class SpringBoot3DruidApplication {
+public class DruidApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot3DruidApplication.class, args);
+        SpringApplication.run(DruidApplication.class, args);
     }
 }
