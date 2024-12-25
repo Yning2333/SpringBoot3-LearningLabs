@@ -11,3 +11,4 @@
 bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test-topic
 
 ```
+http://127.0.0.1:8080/sendKafkaMessage?message=HelloKafka
