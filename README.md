@@ -29,6 +29,7 @@ SpringBot3最低支持JDK17
 - MongoDB
 - Elasticsearch
 - security
+- netty
 
 ## 快速开始
 
