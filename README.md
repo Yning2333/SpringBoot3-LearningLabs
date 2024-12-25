@@ -20,7 +20,7 @@ SpringBot3最低支持JDK17
 - **[spring-boot3-mybatis](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-mybatis)**：集成mybatis
 - **[spring-boot3-mybatis-plus](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-mybatis-plus)**：集成mybatis-plus
 - **[spring-boot3-redis](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-redis)**：集成redis
-- **[spring-boot3-kafka](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-kafka)**：kafka
+- **[spring-boot3-kafka](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-kafka)**：集成kafka
 
 ## 快速开始
 
