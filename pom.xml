@@ -15,6 +15,7 @@
         <module>spring-boot3-mybatis</module>
         <module>spring-boot3-redis</module>
         <module>spring-boot3-mybatis-plus</module>
+        <module>spring-boot3-kafka</module>
     </modules>
 
     <properties>
@@ -50,6 +51,9 @@
                     <configuration>
                         <source>${java.version}</source>
                         <target>${java.version}</target>
+                        <compilerArgs>
+                            <arg>-parameters</arg>
+                        </compilerArgs>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>
