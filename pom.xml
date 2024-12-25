@@ -16,6 +16,7 @@
         <module>spring-boot3-redis</module>
         <module>spring-boot3-mybatis-plus</module>
         <module>spring-boot3-kafka</module>
+        <module>spring-boot3-security</module>
     </modules>
 
     <properties>
