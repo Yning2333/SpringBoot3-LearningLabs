@@ -30,6 +30,7 @@ SpringBot3最低支持JDK17
 - Elasticsearch
 - security
 - netty
+- websocket
 
 ## 快速开始
 
