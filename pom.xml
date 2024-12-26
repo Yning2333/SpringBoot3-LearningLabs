@@ -19,6 +19,8 @@
         <module>spring-boot3-security</module>
         <module>spring-boot3-scheduler</module>
         <module>spring-boot3-minio</module>
+        <module>spring-boot3-mongodb</module>
+        <module>spring-boot3-mongodb-file</module>
     </modules>
 
     <properties>

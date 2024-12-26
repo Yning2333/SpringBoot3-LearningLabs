@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://ip:27017/filedb
+      database: filedb
+      # uri: mongodb://username:password@ip:27017/testdb
+  servlet:
+    multipart:
+      max-file-size: 100MB  # 最大文件大小
+      max-request-size: 150MB  # 最大请求大小（包括所有文件）
