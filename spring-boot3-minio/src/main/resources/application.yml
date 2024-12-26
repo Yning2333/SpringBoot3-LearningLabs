@@ -1,0 +1,11 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB  # 最大文件大小
+      max-request-size: 150MB  # 最大请求大小（包括所有文件）
+
+minio:
+  endpoint: http://ip:9000
+  access-key: admin
+  secret-key: password
+  bucket-name: testbucket
