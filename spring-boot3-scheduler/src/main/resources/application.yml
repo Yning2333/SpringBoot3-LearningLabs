@@ -1,0 +1,17 @@
+spring:
+  quartz:
+    # memory 表示将作业和触发器信息存储在内存中，适用于轻量级应用或临时任务
+    # jdbc 表示将作业和触发器信息存储在数据库中，适用于需要持久化任务的应用
+    job-store-type: memory
+    # 指定调度器的名称，默认值为 QuartzScheduler
+    scheduler-name: QuartzScheduler
+    # true 表示在应用程序关闭时，等待当前正在运行的任务完成后再关闭调度器
+    wait-for-jobs-to-complete-on-shutdown: true
+    # 调度器的线程池配置
+    thread-pool:
+      # 线程池的线程数，默认值为 10
+      thread-count: 10
+      # 线程池的线程优先级，默认值为 5
+      thread-priority: 5
+    cron:
+      expression: 0/1 * * * * ?

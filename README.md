@@ -22,10 +22,10 @@ SpringBot3最低支持JDK17
 - **[spring-boot3-redis](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-redis)**：集成redis
 - **[spring-boot3-kafka](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-kafka)**：集成kafka
 - **[spring-boot3-security](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-security)**：集成security
+- **[spring-boot3-scheduler](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-scheduler)**：集成scheduler
 
 迭代计划
 - RabbitMQ
-- scheduler
 - minio
 - MongoDB
 - Elasticsearch
