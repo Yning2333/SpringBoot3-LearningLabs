@@ -26,7 +26,7 @@ SpringBot3最低支持JDK17
 - **[spring-boot3-minio](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-minio)**：集成minio
 - **[spring-boot3-mongodb](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-minio)**：集成mongodb
 - **[spring-boot3-mongodb-file](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-minio)**：集成mongodb保存文件
-- **[spring-boot3-mongodb-netty](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-netty)**：集成mongodb保存文件
+- **[spring-boot3-mongodb-netty](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-netty)**：集成netty
 
 迭代计划
 - RabbitMQ
