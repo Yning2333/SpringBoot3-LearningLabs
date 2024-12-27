@@ -23,6 +23,7 @@
         <module>spring-boot3-mongodb-file</module>
         <module>spring-boot3-netty/spring-boot3-netty-server</module>
         <module>spring-boot3-netty/spring-boot3-netty-client</module>
+        <module>spring-boot3-elasticsearch</module>
     </modules>
 
     <properties>

@@ -1,0 +1,5 @@
+spring:
+  data:
+    elasticsearch:
+      client:
+        uris: http://1.92.139.239:9200
