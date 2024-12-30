@@ -1,5 +1,6 @@
 spring:
-  data:
-    elasticsearch:
-      client:
-        uris: http://1.92.139.239:9200
+  elasticsearch:
+    uris: http://1.92.139.239:9200
+    connection-timeout: "15s"
+    username: elastic
+    password: 123456
