@@ -1,5 +1,5 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://1.92.139.239:27017/testdb
+      uri: mongodb://ip:27017/testdb
       # uri: mongodb://username:password@ip:27017/testdb
