@@ -24,6 +24,7 @@
         <module>spring-boot3-netty/spring-boot3-netty-server</module>
         <module>spring-boot3-netty/spring-boot3-netty-client</module>
         <module>spring-boot3-elasticsearch</module>
+        <module>spring-boot3-activiti</module>
     </modules>
 
     <properties>

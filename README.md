@@ -31,7 +31,8 @@ SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x �
 - **[spring-boot3-mongodb](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-minio)**：集成mongodb
 - **[spring-boot3-mongodb-file](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-minio)**：集成mongodb保存文件
 - **[spring-boot3-netty](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-netty)**：集成netty
-- **[spring-boot3-Elasticsearch](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-Elasticsearch)**：集成elasticsearch
+- **[spring-boot3-elasticsearch](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-elasticsearch)**：集成elasticsearch
+- **[spring-boot3-activiti](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-activiti)**：集成activiti
 
 
 迭代计划
