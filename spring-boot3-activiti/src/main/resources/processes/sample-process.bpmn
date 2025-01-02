@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:activiti="http://activiti.org/bpmn" targetNamespace="http://www.activiti.org/test">
+  <process id="sampleProcess" name="Sample Process" isExecutable="true">
+    <startEvent id="startEvent" name="Start"/>
+    <sequenceFlow id="flow1" sourceRef="startEvent" targetRef="task1"/>
+    <userTask id="task1" name="Task 1" activiti:assignee="user1"/>
+    <sequenceFlow id="flow2" sourceRef="task1" targetRef="exclusiveGateway"/>
+    <exclusiveGateway id="exclusiveGateway" name="Decision"/>
+    <sequenceFlow id="flow3" sourceRef="exclusiveGateway" targetRef="task2">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${approved == true}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="flow4" sourceRef="exclusiveGateway" targetRef="task3">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${approved == false}]]></conditionExpression>
+    </sequenceFlow>
+    <userTask id="task2" name="Task 2" activiti:assignee="user2"/>
+    <sequenceFlow id="flow5" sourceRef="task2" targetRef="endEvent"/>
+    <userTask id="task3" name="Task 3" activiti:assignee="user3"/>
+    <sequenceFlow id="flow6" sourceRef="task3" targetRef="endEvent"/>
+    <endEvent id="endEvent" name="End"/>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_sampleProcess">
+    <bpmndi:BPMNPlane id="BPMNPlane_sampleProcess" bpmnElement="sampleProcess">
+      <bpmndi:BPMNShape id="startEvent_shape" bpmnElement="startEvent">
+        <dc:Bounds x="35.0" y="195.0" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="task1_shape" bpmnElement="task1">
+        <dc:Bounds x="140.0" y="185.0" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="exclusiveGateway_shape" bpmnElement="exclusiveGateway">
+        <dc:Bounds x="305.0" y="195.0" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="task2_shape" bpmnElement="task2">
+        <dc:Bounds x="450.0" y="109.99999" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="task3_shape" bpmnElement="task3">
+        <dc:Bounds x="450.0" y="225.00002" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="endEvent_shape" bpmnElement="endEvent">
+        <dc:Bounds x="635.0" y="202.0" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="flow1_edge" bpmnElement="flow1">
+        <di:waypoint x="71.0" y="213.0"/>
+        <di:waypoint x="140.0" y="213.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow2_edge" bpmnElement="flow2">
+        <di:waypoint x="240.0" y="213.0"/>
+        <di:waypoint x="305.0" y="213.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow3_edge" bpmnElement="flow3">
+        <di:waypoint x="355.0" y="213.0"/>
+        <di:waypoint x="450.0" y="150.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow4_edge" bpmnElement="flow4">
+        <di:waypoint x="355.0" y="213.0"/>
+        <di:waypoint x="450.0" y="285.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow5_edge" bpmnElement="flow5">
+        <di:waypoint x="550.0" y="150.0"/>
+        <di:waypoint x="635.0" y="220.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow6_edge" bpmnElement="flow6">
+        <di:waypoint x="550.0" y="285.0"/>
+        <di:waypoint x="635.0" y="220.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

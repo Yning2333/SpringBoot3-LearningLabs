@@ -1,7 +1,27 @@
-server:
-  port: 8080
-  servlet:
-    context-path: /
-logging:
-  level:
-    com.alibaba.druid.pool.DruidDataSource: INFO
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/activiti?useSSL=false&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: yn@PAS159357!
+  jpa:
+    hibernate:
+      ddl-auto: update # 自动更新表结构
+    show-sql: true # 打印 SQL 语句
+
+  # activiti7配置
+  activiti:
+    # 自动部署验证设置：true-开启（默认）、false-关闭
+    check-process-definitions: true
+    # 保存历史数据
+    history-level: full
+    # 检测历史表是否存在
+    db-history-used: true
+    # 关闭SpringAutoDeployment
+    deployment-mode: never-fail
+    # 对数据库中所有表进行更新操作，如果表不存在，则自动创建
+    database-schema-update: true
+    # 解决频繁查询SQL问题
+    async-executor-activate: false
+    bpmn:
+      folder: processes/
