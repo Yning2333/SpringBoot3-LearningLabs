@@ -15,7 +15,8 @@ public class UserController {
     private UserService userService;
 
     /**
-     * URL_ADDRESS GET http://localhost:8080/users
+     * URL_ADDRESS
+     * GET http://localhost:8080/users
      *
      * @return
      */
@@ -26,7 +27,8 @@ public class UserController {
 
     /**
     /**
-     * URL_ADDRESS GET http://localhost:8080/users/{id}
+     * URL_ADDRESS
+     * GET http://localhost:8080/users/{id}
      *
      * @param id
      * @return
@@ -37,7 +39,8 @@ public class UserController {
     }
 
     /**
-     * URL_ADDRESS POST http://localhost:8080/users
+     * URL_ADDRESS
+     * POST http://localhost:8080/users
      * Body (JSON):
      * {
      *   "name": "John Doe",
@@ -53,7 +56,8 @@ public class UserController {
     }
 
     /**
-     * URL_ADDRESS PUT  http://localhost:8080/users/{id}
+     * URL_ADDRESS
+     * PUT  http://localhost:8080/users/{id}
      * {
      *   "name": "John Smith",
      *   "email": "john.smith@example.com"
@@ -69,7 +73,8 @@ public class UserController {
     }
 
     /**
-     * URL_ADDRESS DELETE http://localhost:8080/users/{id}
+     * URL_ADDRESS
+     * DELETE http://localhost:8080/users/{id}
      * @param id
      */
     @DeleteMapping("/{id}")

@@ -19,7 +19,8 @@ public class FileController {
     private FileStorageService fileStorageService;
 
     /**
-     * URL_ADDRESS POST http://localhost:8080/files/upload
+     * URL_ADDRESS
+     * POST http://localhost:8080/files/upload
      * Form-Data:
      *   Key: file
      *   Value: [选择一个文件]
@@ -40,7 +41,8 @@ public class FileController {
     }
 
     /**
-     * URL_ADDRESS GET http://localhost:8080/files/download/{id}
+     * URL_ADDRESS
+     * GET http://localhost:8080/files/download/{id}
      * @param id
      * @return
      */

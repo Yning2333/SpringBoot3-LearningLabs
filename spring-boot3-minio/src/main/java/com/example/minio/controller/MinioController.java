@@ -17,11 +17,14 @@ public class MinioController {
     private MinioService minioService;
 
     /**
-     * 上传文件
-     * @param file 文件
-     * @param path 自定义路径
-     * @param contentType 文件类型
-     * @return 上传结果
+     * 上传文件到 Minio 存储。
+     * URL_ADDRESS:
+     * http://127.0.0.1:8080/minio/upload
+     *
+     * @param file 文件对象（必填）。
+     * @param path 自定义路径（选填），若为空则存储在默认路径。
+     * @param contentType 文件类型（选填），用于设置 MIME 类型。
+     * @return 文件上传的结果消息。
      */
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(
@@ -38,9 +41,12 @@ public class MinioController {
     }
 
     /**
-     * 下载文件
-     * @param objectName 文件名
-     * @return 文件流
+     * 下载文件。
+     * URL_ADDRESS:
+     * http://127.0.0.1:8080/minio/download/{objectName}
+     *
+     * @param objectName 要下载的文件名称。
+     * @return 文件流作为响应，包含文件内容。
      */
     @GetMapping("/download/{objectName}")
     public ResponseEntity<byte[]> downloadFile(@PathVariable("objectName") String objectName) {

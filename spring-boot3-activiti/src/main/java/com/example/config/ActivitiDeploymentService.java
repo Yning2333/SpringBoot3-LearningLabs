@@ -3,6 +3,8 @@ package com.example.config;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
+import org.jdom2.Document;
+import org.jdom2.input.SAXBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -59,7 +61,7 @@ public class ActivitiDeploymentService {
         try {
             if (resource.exists()) {
                 // 读取 BPMN 文件中的 process id
-                String processId = getProcessIdFromBpmn(resource.getInputStream());
+                String processId = getProcessDefinitionId(resource.getInputStream());
 
                 if (processId != null) {
                     // 检查是否已经存在相同的流程定义
@@ -90,17 +92,15 @@ public class ActivitiDeploymentService {
     }
 
     // 解析 BPMN 文件中的 process id
-    private String getProcessIdFromBpmn(InputStream inputStream) {
+    public static String getProcessDefinitionId(InputStream inputStream) {
         try {
-            // 解析 BPMN 文件，获取 <process> 标签的 id 属性
-            XmlNode bpmnDocument = XmlUtils.parseXml(inputStream);
-            XmlNode processNode = bpmnDocument.getElementsByTagName("process").item(0);
-            if (processNode != null) {
-                return processNode.getAttributes().getNamedItem("id").getTextContent();
-            }
+            SAXBuilder builder = new SAXBuilder();
+            Document document = builder.build(inputStream);
+            return document.getRootElement()
+                    .getChild("process", document.getRootElement().getNamespace())
+                    .getAttributeValue("id");
         } catch (Exception e) {
-            System.out.println("Error reading BPMN file: " + e.getMessage());
+            throw new RuntimeException("Error reading process definition ID from XML", e);
         }
-        return null;
     }
 }

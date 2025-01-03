@@ -13,7 +13,10 @@ public class RedisController {
     private RedisUtil redisUtil;
 
     /**
-     * URL_ADDRESS     * http://127.0.0.1:8080/setRedisValue?key=name&value=123456
+     * URL_ADDRESS
+     *
+     * GET  http://127.0.0.1:8080/setRedisValue?key=name&value=123456
+     *
      * @param key
      * @param value
      * @return
@@ -25,7 +28,9 @@ public class RedisController {
     }
 
     /**
-     * URL_ADDRESS     * http://127.0.0.1:8080/getRedisValue?key=name
+     * URL_ADDRESS
+     * GET http://127.0.0.1:8080/getRedisValue?key=name
+     *
      * @param key
      * @return
      */
@@ -35,7 +40,9 @@ public class RedisController {
     }
 
     /**
-     * URL_ADDRESS     * http://127.0.0.1:8080/deleteRedisValue?key=name
+     * URL_ADDRESS
+     * GET http://127.0.0.1:8080/deleteRedisValue?key=name
+     *
      * @param key
      */
     @GetMapping("/deleteRedisValue")
