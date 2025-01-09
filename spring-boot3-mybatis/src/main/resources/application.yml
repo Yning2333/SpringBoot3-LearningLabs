@@ -10,3 +10,6 @@ logging:
     com.alibaba.druid.pool.DruidDataSource: INFO
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #自动处理下划线和驼峰的映射
