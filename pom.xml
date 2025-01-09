@@ -25,6 +25,7 @@
         <module>spring-boot3-netty/spring-boot3-netty-client</module>
         <module>spring-boot3-elasticsearch</module>
         <module>spring-boot3-activiti</module>
+        <module>spring-boot3-freemark</module>
     </modules>
 
     <properties>

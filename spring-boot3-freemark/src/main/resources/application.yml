@@ -1,0 +1,7 @@
+spring:
+  application:
+    name:
+      spring-boot3-freemark
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .ftl
