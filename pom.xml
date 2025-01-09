@@ -26,6 +26,7 @@
         <module>spring-boot3-elasticsearch</module>
         <module>spring-boot3-activiti</module>
         <module>spring-boot3-freemark</module>
+        <module>spring-boot3-openapi</module>
     </modules>
 
     <properties>

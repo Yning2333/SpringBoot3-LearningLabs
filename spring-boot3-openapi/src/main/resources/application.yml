@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-boot3-swagger
+springdoc:
+  api-docs:
+    version: OPENAPI_3_0
+  swagger-ui:
+    config:
+      docExpansion: none #??????
+    path: /swagger-ui.html
