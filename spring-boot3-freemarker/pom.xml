@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>spring-boot3-freemark</artifactId>
+    <artifactId>spring-boot3-freemarker</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

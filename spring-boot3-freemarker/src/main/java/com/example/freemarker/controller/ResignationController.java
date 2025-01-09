@@ -1,4 +1,4 @@
-package com.example.freemark.controller;
+package com.example.freemarker.controller;
 
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.io.FileWriter;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;

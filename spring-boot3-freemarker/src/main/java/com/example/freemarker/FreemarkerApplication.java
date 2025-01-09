@@ -1,13 +1,13 @@
-package com.example.freemark;
+package com.example.freemarker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FreemarkApplication {
+public class FreemarkerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FreemarkApplication.class, args);
+        SpringApplication.run(FreemarkerApplication.class, args);
     }
 
 }
