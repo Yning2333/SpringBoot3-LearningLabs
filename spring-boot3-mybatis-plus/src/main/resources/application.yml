@@ -11,3 +11,6 @@ logging:
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   type-aliases-package: com.example.mybatisPlus.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 控制台打印 SQL
+    map-underscore-to-camel-case: true  # 自动将下划线字段映射为驼峰字段
