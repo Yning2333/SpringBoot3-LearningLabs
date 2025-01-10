@@ -6,5 +6,5 @@ springdoc:
     version: OPENAPI_3_0
   swagger-ui:
     config:
-      docExpansion: none #??????
+      docExpansion: none # 控制 API 文档的展开方式，可选值：none、list、full
     path: /swagger-ui.html
