@@ -6,20 +6,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import javax.sql.DataSource;
+
 @Configuration
 public class ActivitiConfig {
 
     @Bean
-    public ProcessEngineConfiguration processEngineConfiguration() {
+    public ProcessEngineConfiguration processEngineConfiguration(DataSource dataSource) {
         StandaloneProcessEngineConfiguration configuration = new StandaloneProcessEngineConfiguration();
-        configuration.setJdbcUrl("jdbc:mysql://localhost:3306/activiti?useSSL=false&characterEncoding=utf8");
-        configuration.setJdbcDriver("com.mysql.cj.jdbc.Driver");
-        configuration.setJdbcUsername("root");
-        configuration.setJdbcPassword("yn@PAS159357!");
-
-        // 设置自动更新数据库结构
+        configuration.setDataSource(dataSource);
         configuration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
-
         return configuration;
     }
 
