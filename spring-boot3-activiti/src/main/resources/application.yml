@@ -3,7 +3,7 @@ spring:
     url: jdbc:mysql://localhost:3306/activiti?useSSL=false&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: yn@PAS159357!
+    password: root
   jpa:
     hibernate:
       ddl-auto: update # 自动更新表结构
