@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/flowable?useSSL=false&characterEncoding=utf8&nullCatalogMeansCurrent=true
+    username: root
+    password: yn@PAS159357!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+flowable:
+  check-process-definitions: true
+  database-schema-update: true # 数据库初始化配置
+  bpmn:
+    folder: processes/

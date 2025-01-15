@@ -27,6 +27,7 @@
         <module>spring-boot3-activiti</module>
         <module>spring-boot3-freemarker</module>
         <module>spring-boot3-openapi</module>
+        <module>spring-boot3-flowable</module>
     </modules>
 
     <properties>
