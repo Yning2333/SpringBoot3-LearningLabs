@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "5b4a148a-bcb1-433a-9009-e5eb734308fa",
+		"name": "flowable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8478378"
+	},
+	"item": [
+		{
+			"name": "流程图查看",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/leave/pic?processId=fe10e43c-d2e8-11ef-932b-988fe0665305",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"pic"
+					],
+					"query": [
+						{
+							"key": "processId",
+							"value": "fe10e43c-d2e8-11ef-932b-988fe0665305"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "开启请假流程",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "employeeId",
+							"value": "emp123",
+							"type": "text"
+						},
+						{
+							"key": "days",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "休假",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/leave/start",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取任务列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/leave/tasks?employeeId=manage123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "manage123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "员工提交请假",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "taskId",
+							"value": "fe1e78d5-d2e8-11ef-932b-988fe0665305",
+							"type": "text"
+						},
+						{
+							"key": "zuzhangId",
+							"value": "zuzhang123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/leave/submit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "组长批准请假",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "taskId",
+							"value": "d15219d2-d2ef-11ef-beea-988fe0665305",
+							"type": "text"
+						},
+						{
+							"key": "manageId",
+							"value": "manage123",
+							"type": "text"
+						},
+						{
+							"key": "zuzhangId",
+							"value": "zuzhang123",
+							"type": "text"
+						},
+						{
+							"key": "checkResult",
+							"value": "通过",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/leave/leaderApprove",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"leaderApprove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "经理审批",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "taskId",
+							"value": "a5145894-d2f1-11ef-b832-988fe0665305",
+							"type": "text"
+						},
+						{
+							"key": "checkResult",
+							"value": "通过",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/leave/managerApprove",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"managerApprove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
