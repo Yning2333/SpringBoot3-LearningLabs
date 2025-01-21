@@ -51,7 +51,7 @@ SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x �
 2. **构建项目**：
    ```bash
     cd SpringBoot3-LearningLabs
-    ./mvnw clean install
+    mvn clean install
 
 3. **运行示例**：
 每个模块都是独立的 Spring Boot 应用，可以直接运行。

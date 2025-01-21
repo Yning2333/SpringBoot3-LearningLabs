@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-boot3-swagger
+    name: spring-boot3-openapi
 springdoc:
   api-docs:
     version: OPENAPI_3_0
