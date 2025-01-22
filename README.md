@@ -37,6 +37,7 @@ SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x �
 - **[spring-boot3-swagger]**：移步 **[spring-boot3-openapi](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-openapi)**
 - **[spring-boot3-openapi](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-openapi)**：集成openapi
 - **[spring-boot3-flowable](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-flowable)**：集成flowable
+- **[spring-boot3-easyexcel]**：移步 **[spring-boot3-fastexcel](https://github.com/Yning2333/SpringBoot3-LearningLabs/tree/main/spring-boot3-fastexcel)**
 
 
 迭代计划

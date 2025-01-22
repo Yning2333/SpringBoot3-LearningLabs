@@ -28,6 +28,7 @@
         <module>spring-boot3-freemarker</module>
         <module>spring-boot3-openapi</module>
         <module>spring-boot3-flowable</module>
+        <module>spring-boot3-fastexcel</module>
     </modules>
 
     <properties>
