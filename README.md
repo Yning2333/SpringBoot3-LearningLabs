@@ -66,6 +66,8 @@ SpringBoot3-LearningLabs 是一个为新手程序员设计的 Spring Boot 3.x �
 ## 许可证
 本项目采用 MIT 许可证。
 
+如果有问题或者需要我迭代的，请直接通过 Issues 提交。
+
 ## 联系
 如果你有任何问题或建议，请通过以下方式联系我们：
 - **邮件**： yning2333@gmail.com
